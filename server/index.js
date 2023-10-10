@@ -14,7 +14,7 @@ app.use(morgan("dev"))
 const PORT = process.env.PORT || 5000
 
 app.use(cors({
-    credentials: true, origin: "http://localhost:5173"
+    credentials: true, origin: "https://chatbot-7mmv.onrender.com"
 }))
 app.use(cookieParser(process.env.COOKIE_SECRET))
 app.use(express.json())
