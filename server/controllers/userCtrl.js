@@ -32,9 +32,10 @@ const loginUser = async (req, res) => {
                 })
                 res.cookie("token", token, {
                     maxAge: 86400000,
-                    // signed: true,
-                    // httpOnly: false,
-                    // secure: false
+                    signed: true,
+                    httpOnly: false,
+                    secure: false,
+                    SameSite: none
                 })
                 res.status(200).send({ message: "Login successful", user: { name: user.name, email: user.email, chats: user.chats } })
             } else {
