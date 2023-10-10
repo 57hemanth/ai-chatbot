@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom"
-import MainLayout from "./layout/mainLayout"
+import MainLayout from "./layout/MainLayout"
 import { ChatsPage, HomePage, LoginPage, NotFound, SignupPage } from "./pages"
 
 const router = createBrowserRouter([
