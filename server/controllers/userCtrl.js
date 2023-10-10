@@ -35,7 +35,7 @@ const loginUser = async (req, res) => {
                     signed: true,
                     httpOnly: false,
                     secure: false,
-                    SameSite: none
+                    sameSite: "none"
                 })
                 res.status(200).send({ message: "Login successful", user: { name: user.name, email: user.email, chats: user.chats } })
             } else {
