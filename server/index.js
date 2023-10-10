@@ -14,7 +14,7 @@ app.use(morgan("dev"))
 const PORT = process.env.PORT || 5000
 
 app.use(cors({
-    credentials: true, origin: true
+    credentials: true, origin: "https://ai-chatbot-eta-bay-79.vercel.app"
 }))
 app.use(cookieParser(process.env.COOKIE_SECRET))
 app.use(express.json())
